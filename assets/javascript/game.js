@@ -11,14 +11,24 @@ var crystal4 = 0;
 var winner;
 var loser;
 
+// This is the code that isn't working for the reset. :(
+/* 
+var reset = function() {
+   crystal1 = null;
+   crystal2 = null;
+   crystal3 = null;
+   crystal4 = null;
 
-function initializeCalculator()
+ };
+*/
 
+// This generates a random numbers for the computer and crystals. 
 function getRndInteger(min, max) {
    return Math.floor(Math.random() * (max - min + 1) ) + min;
 
  }
 
+// Setting the values of the crystals and computer equal to the number they generate
 comNumber = getRndInteger(19, 120);
 console.log(comNumber);
 crystal1 = getRndInteger(1, 12);
@@ -30,18 +40,9 @@ console.log(crystal3);
 crystal4 = getRndInteger(1, 12);
 console.log(crystal4);
 
+// This is displaying the computer number that was generated 
+$("#com-total").text(comNumber); 
 
-
- function initializeCalculator() {
-   playerCounter = 10;
-   comNumber = 0;
-   crystal1 = 0;
-   crystal2 = 0;
-   crystal3 = 0;
-   crystal4 = 0;
-
-   $("#first-number, #second-number, #operator, #result").empty();
- }
 
 
 

@@ -2,3 +2,7 @@ body {
     background-image: url("..images/loopable-crystal-background_rvcrykkvx_thumbnail-full01.png");
     margin: 0 auto;
 }
+
+img {
+    height: 75px;
+}
