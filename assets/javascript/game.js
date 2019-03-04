@@ -3,7 +3,7 @@
 $(document).ready(function() {
 
 var comNumber= 0;
-var playerCounter = [];
+var playerCounter = 0;
 var crystal1 = 0;
 var crystal2 = 0;
 var crystal3 = 0;
@@ -46,13 +46,36 @@ $("#com-total").text(comNumber);
 // This is a function that adds to the player score when clicked on
 
 $('#crystal-1').click(function() {
-   playerCounter.push(crystal1);
-
+   playerCounter += crystal1;
+   $("#player-total").text(playerCounter); 
+   //playerCounter.push(crystal1);
   // $("#second-number").text(secondNumber);
+
 });
 
+$('#crystal-2').click(function() {
+   playerCounter += crystal2;
+   $("#player-total").text(playerCounter); 
+   //playerCounter.push(crystal1);
+  // $("#second-number").text(secondNumber);
 
-console.log(playerCounter)
+});
+
+$('#crystal-3').click(function() {
+   playerCounter += crystal3;
+   $("#player-total").text(playerCounter); 
+   //playerCounter.push(crystal1);
+  // $("#second-number").text(secondNumber);
+
+});
+
+$('#crystal-4').click(function() {
+   playerCounter += crystal4;
+   $("#player-total").text(playerCounter); 
+   //playerCounter.push(crystal1);
+  // $("#second-number").text(secondNumber);
+
+});
 
 
 

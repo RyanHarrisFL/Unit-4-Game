@@ -1,6 +1,7 @@
 body {
-    background-image: url("assets/images/loopable-crystal-background_rvcrykkvx_thumbnail-full01.png");
+    background-image: url("../images/loopable-crystal-background_rvcrykkvx_thumbnail-full01.png");
     margin: 0 auto;
+    color: white;
 }
 
 img {
