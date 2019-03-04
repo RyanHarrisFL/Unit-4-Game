@@ -2,25 +2,30 @@
    
 $(document).ready(function() {
 
-var comNumber= 0;
+var comNumber = 0;
 var playerCounter = 0;
 var crystal1 = 0;
 var crystal2 = 0;
 var crystal3 = 0;
 var crystal4 = 0;
-var winner;
-var loser;
+var winner = 0;
+var loser = 0;
 
 // This is the code that isn't working for the reset. :(
-/* 
-var reset = function() {
-   crystal1 = null;
-   crystal2 = null;
-   crystal3 = null;
-   crystal4 = null;
+
+/* var reset = function() {
+   crystal1 = 0;
+   crystal2 = 0;
+   crystal3 = 0;
+   crystal4 = 0;
+   plyaerCounter = 0;
+   comNumber = 0;
 
  };
-*/
+*/ 
+
+$("#win-counter").text(winner);
+$("#lose-counter").text(loser);
 
 // This generates a random numbers for the computer. 
 function getRndInteger(min, max) {
@@ -41,7 +46,7 @@ console.log(crystal4);
 
 
 // This is displaying the computer number that was generated 
-$("#com-total").text(comNumber); 
+$("#com-total").text(comNumber);
 
 // This is a function that adds to the player score when clicked on
 
@@ -50,6 +55,7 @@ $('#crystal-1').click(function() {
    $("#player-total").text(playerCounter); 
    //playerCounter.push(crystal1);
   // $("#second-number").text(secondNumber);
+  reset();
 
 });
 
@@ -58,6 +64,7 @@ $('#crystal-2').click(function() {
    $("#player-total").text(playerCounter); 
    //playerCounter.push(crystal1);
   // $("#second-number").text(secondNumber);
+  reset();
 
 });
 
@@ -66,6 +73,7 @@ $('#crystal-3').click(function() {
    $("#player-total").text(playerCounter); 
    //playerCounter.push(crystal1);
   // $("#second-number").text(secondNumber);
+  reset();
 
 });
 
@@ -74,11 +82,21 @@ $('#crystal-4').click(function() {
    $("#player-total").text(playerCounter); 
    //playerCounter.push(crystal1);
   // $("#second-number").text(secondNumber);
+  reset();
 
 });
 
+var reset = function() {
+if (playerCounter === comNumber) {
+   winner++;
+   console.log(winner);
+   $("#win-counter").text(winner);
+} 
 
-
+if (playerCounter > comNumber) {
+  loser--;
+}
+}
 
 });
 
