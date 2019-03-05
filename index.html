@@ -14,26 +14,70 @@
 
 <body>
     <div class="container">
-
-        <h1>The Crystal Collector</h1>
-        <div><p>Instructions go here.</p></div>
-        <div id="win-counter"></div>
-        <div id="com-total"></div>
-        <div id="lose-counter"></div>
+        <div class="jumbotron jumbotron">
+                <img class="logo" src="assets/images/Krystal-Logo-1.png">
+              <h1 class="display-4">The Krystal Collector</h1>
+              <p class="lead">Instructions: Select Krystal hamburgers to match the number.</p>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="card">
+                        <h5 class="card-header">Wins</h5>
+                            <div class="card-body">
+                                <p id="win-counter" class="card-text"></p>
+                            </div>
+                    </div>
+                </div>
+              <div class="col-sm">
+                <div class="card">
+                    <h5 class="card-header">Computer Number</h5>
+                    <div class="card-body">
+                      <p id="com-total" class="card-text"></p>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-sm">
+                <div class="card">
+                    <h5 class="card-header">Player Number</h5>
+                    <div class="card-body">
+                      <p id="player-total" class="card-text"></p>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-sm">
+                <div class="card">
+                    <h5 class="card-header">Losses</h5>
+                    <div class="card-body">
+                      <p id="lose-counter" class="card-text"></p>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="container mt-5">
+                <div class="row">
+                  <div class="col-sm">
+                  </div>
+                  <div id="crystal-buttons" class="col-sm-5">
+                        <button id="crystal-1"><span><img src="assets/images/Original-Krystal.png"></span></button>
+                        <button id="crystal-2"><span><img src="assets/images/Original-Krystal.png"></span></button>
+                        <button id="crystal-3"><span><img src="assets/images/Original-Krystal.png"></span></button>
+                        <button id="crystal-4"><span><img src="assets/images/Original-Krystal.png"></span></button>
+                  </div>
+                  <div class="col-sm">
+                  </div>
+                </div>
+              </div>
         <div id="crystal-buttons">
-            <button id="crystal-1"><span><img src="assets/images/G-7pUL-H.png"></span></button>
-            <button id="crystal-2"><span><img src="assets/images/G-7pUL-H.png"></span></button>
-            <button id="crystal-3"><span><img src="assets/images/G-7pUL-H.png"></span></button>
-            <button id="crystal-4"><span><img src="assets/images/G-7pUL-H.png"></span></button>
         </div> 
-        <div id="player-total"></div>
 
-</div>
+
 
 <!--javascript and jquery scripts-->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="assets/javascript/game.js"></script>
-
+</div>
 </body>
 </html>

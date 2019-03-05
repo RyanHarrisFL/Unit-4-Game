@@ -1,9 +1,14 @@
 body {
-    background-image: url("../images/loopable-crystal-background_rvcrykkvx_thumbnail-full01.png");
+    background-image: url("../images/59261795-takeaway-fast-food-burgers-background-for-cafe-menu-design-usage-with-seamless-pattern-of-hamburgers.jpg");
     margin: 0 auto;
-    color: white;
+    color: black;
 }
 
 img {
     height: 75px;
+}
+
+.logo {
+    float: left;
+    margin-right: 10px;
 }
