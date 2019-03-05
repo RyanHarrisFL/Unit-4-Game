@@ -32,7 +32,7 @@ var reset = function() {
     $("#com-total").text(comNumber);
     $("#player-total").text(playerCounter);
     $("#win-counter").text(winner);
-    // $("#lose-counter").text(loser);
+    alert("Winner winner hamburger dinner!");
   } else if (playerCounter > comNumber) {
     playerCounter = 0;
     loser++;
@@ -43,7 +43,7 @@ var reset = function() {
     crystal4 = Math.floor(Math.random() * (12 - 1 + 1) ) + 1;
     $("#com-total").text(comNumber);
     $("#player-total").text(playerCounter);
-    // $("#win-counter").text(winner);
+    alert("You lose!");
     $("#lose-counter").text(loser);
     
   }
