@@ -1,5 +1,7 @@
 body {
+    background-color: red;
     background-image: url("../images/59261795-takeaway-fast-food-burgers-background-for-cafe-menu-design-usage-with-seamless-pattern-of-hamburgers.jpg");
+    background-blend-mode: darken;
     margin: 0 auto;
     color: black;
 }
